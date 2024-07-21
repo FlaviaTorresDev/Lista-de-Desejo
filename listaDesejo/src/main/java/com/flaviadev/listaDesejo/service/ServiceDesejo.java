@@ -9,7 +9,7 @@ import com.flaviadev.listaDesejo.model.Desejo;
 import com.flaviadev.listaDesejo.repository.DesejoRepository;
 
 @Service
-public class ServiceRepository {
+public class ServiceDesejo {
 	
 	@Autowired
 	private DesejoRepository desejoRepository;
