@@ -3,6 +3,8 @@ package com.flaviadev.listaDesejo.model;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,6 +31,7 @@ public class Desejo {
 	
 	private String descricaoDesejo;
 	
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	private LocalDate dataDesejo;
 
 }
